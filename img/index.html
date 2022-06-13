@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="songdajung">
+    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+    <meta name="keywords" content="메가박스, 유튜브, 영화, 최신영화, 영화관, cgv, 롯데시네마, 사이트만들기, 따라하기, 이미지슬라이드">
+
+    <title>MEGABOX SITE CODING</title>
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/reset - 1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- html5shiv : 시맨틱태그(header, section, article, address, footer...)를 (9)구버전 중에서는
+        이 시멘틱태그를 인식하지 못하는 경우 html5shiv가 그 시멘틱 태그를 인식할 수 있게 한다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="#">
+                            <em><img src="img/logo.png" alt="MegaBox Logo"></em>
+                            <strong>
+                                <img src="img/logo-sub.png" alt="LIFE THEAER">
+                            </strong>
+                        </a>
+                    </h1>
+                    <!-- 모바일메뉴 -->
+                    <nav id="mNav">
+                        <h2 class="ir">메가박스 전체메뉴</h2>
+                        <a href="#" class="ham"><span></span></a>
+                    </nav>
+                    <!--//mNav-->
+                    <div class="nav">
+                        <ul class="clearfix">
+                            <li><a href="#">영화</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                            <li><a href="#">영화관</a></li>
+                            <li><a href="#">특별관</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </div>
+                    <!--//nav-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <section id="banner">
+        <div class="banner_menu">
+            <h2 class="ir">배너영역</h2>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="bm_left">
+                        <ul>
+                            <li class="total"><a href="#">전체메뉴</a></li>
+                            <li class="line"><a href="#">필름 소사이어티</a></li>
+                            <li><a href="#">클래식 소사이어티</a></li>
+                        </ul>
+                    </div>
+                    <!--//bm_left-->
+                    <div class="bm_right">
+                        <ul>
+                            <li class="line"><a href="#">고객센터</a></li>
+                            <li class="line"><a href="#">멤버쉽</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="white"><a href="#">상영 시간표</a></li>
+                            <li class="purple"><a href="#">빠른 예매</a></li>
+                        </ul>
+                    </div>
+                    <!--//bm_right-->
+                </div>
+            </div>
+        </div>
+        <!--//banner_menu-->
+        <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container swiper-container1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ss1">
+                        <div class="container">
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss2">
+                        <div class="container">
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss3">
+                        <div class="container">
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
+        </div>
+        <!--//slider-->
+    </section>
+    <!--//banner-->
+    <section id="movie">
+        <div class="container">
+            <div class="row">
+                <h2 class="ir">영화 예매</h2>
+                <div class="movie">
+                    <div class="movie_title">
+                        <ul class="clearfix">
+                            <li class="active"><a href="#">박스오피스</a></li>
+                            <li><a href="#">최신개봉작</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                            <li class="bar"></li>
+                        </ul>
+                    </div>
+                    <!--//movie_title-->
+                    <div class="movie_chart">
+                        <!-- Slider main container -->
+                        <div class="swiper-container swiper-container2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200204.png" srcset="img/poster200204@2.png 2x"
+                                                alt="브로커">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir">전체관람</span>
+                                            <strong>브로커</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200205.png" srcset="img/poster200205@02.png 2x"
+                                                alt="애프터양">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a19 ir">19세이상관람가</span>
+                                            <strong>애프터양</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200207.png" srcset="img/poster200207@.png 2x"
+                                                alt="카시오페아">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir">15세이상관람가</span>
+                                            <strong>카시오페아</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200208.png" srcset="img/poster200208@2.png 2x"
+                                                alt="피는 물보다 진하다">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir">15세이상관람가</span>
+                                            <strong>피는 물보다 진하다</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200204.png" srcset="img/poster200204@2.png 2x"
+                                                alt="브로커">
+                                        </figure>
+                                        <div class="rank"><strong>5</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir">전체관람가</span>
+                                            <strong>ensemble start</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200205.png" srcset="img/poster200205@2.png 2x"
+                                                alt="애프터양">
+                                        </figure>
+                                        <div class="rank"><strong>6</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a19 ir">19세이상관람가</span>
+                                            <strong>애프터양</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200212.png" srcset="img/poster200212@2.png 2x"
+                                                alt="안녕하세요">
+                                        </figure>
+                                        <div class="rank"><strong>7</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir">전체관람가</span>
+                                            <strong>안녕하세요</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster200213.jpg" srcset="img/poster200213@2.jpg 2x"
+                                                alt="특수요원빼꼼">
+                                        </figure>
+                                        <div class="rank"><strong>8</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir">전체관람가</span>
+                                            <strong>특수요원빼꼼</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                            </div>
+
+                        </div><!-- 첫번째 슬라이드 -->
+                        <div class="swiper-container swiper-container2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2001.jpg" srcset="img/poster2001@2.jpg 2x" alt="스파이더맨">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir">전체관람</span>
+                                            <strong>스파이더맨</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2002.jpg" srcset="img/poster2002@2.jpg 2x" alt="킹스맨">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a19 ir">전체관람</span>
+                                            <strong>킹스맨</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2003.jpg" srcset="img/poster2003@2.jpg 2x" alt="엔칸토">
+                                        </figure>
+                                        <div class="rank"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir">15세이상관람가</span>
+                                            <strong>엔칸토</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2004.jpg" srcset="img/poster2004@2.jpg 2x" alt="매트릭스">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a12 ir">12세이상관람가</span>
+                                            <strong>매트릭스</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2005.jpg" srcset="img/poster2005@2.jpg 2x"
+                                                alt="드라이브 마이카">
+                                        </figure>
+                                        <div class="rank"><strong>5</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir">전체관람가</span>
+                                            <strong>드라이브 마이카</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2006.jpg" srcset="img/poster2006@2.jpg 2x"
+                                                alt="프랜치 디스패치">
+                                        </figure>
+                                        <div class="rank"><strong>6</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a19 ir">19세이상관람가</span>
+                                            <strong>프랜치 디스패치</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2007.jpg" srcset="img/poster2007@2.jpg 2x" alt="램">
+                                        </figure>
+                                        <div class="rank"><strong>7</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir">15세이상관람가</span>
+                                            <strong>램</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2008.jpg" srcset="img/poster2008@2.jpg 2x" alt="신데렐라">
+                                        </figure>
+                                        <div class="rank"><strong>8</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div><!-- poster -->
+                                    <div class="infor">
+                                        <h3><span class="icon a12 ir">12세이상관람가</span>
+                                            <strong>신데렐라</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+                            </div>
+
+                        </div><!-- 두번째 슬라이드 -->
+                        <div class="swiper-container swiper-container2">
+                            <div class="swiper-wrapper chart_cont2">
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2009.jpg" srcset="img/poster2009@2.jpg 2x" alt="해피뉴이어">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>1</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a12 ir_su">12세이상관람</span>
+                                            <strong>해피뉴이어</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2010.jpg" srcset="img/poster2010@2.jpg 2x" alt="노웨어스페셜">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>2</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <span class="icon all ir_su">전체관람</span>
+                                        <h3><span class="icon all ir_su"></span><strong>노웨어스페셜</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2011.jpg" srcset="img/poster2011@2.jpg 2x"
+                                                alt="연애빠진로맨스">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>3</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_su">15세이상관람</span>
+                                            <strong>연애빠진로맨스</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2012.jpg" srcset="img/poster2012@2.jpg 2x" alt="리틀뱀파이어">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>4</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon all ir_su">전체관람</span>
+                                            <strong>리틀뱀파이어</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2013.jpg" srcset="img/poster2013@2.jpg 2x"
+                                                alt="하우스오브구찌">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>5</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_su">15세이상관람</span>
+                                            <strong>하우스오브구찌</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2014.jpg" srcset="img/poster2014@2.jpg 2x" alt="프랑스">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>6</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a12 ir_su">12세이상관람</span>
+                                            <strong>프랑스</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2015.jpg" srcset="img/poster2015@2.jpg 2x" alt="아멜리에">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>7</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_su">15세이상관람</span>
+                                            <strong>아멜리에</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster2016.jpg" srcset="img/poster2016@2.jpg 2x" alt="킹메이커">
+                                        </figure>
+
+                                        <div class="rank r1"><strong>1</strong></div><!-- rank end -->
+
+                                        <div class="mx">
+                                            <span class="icon m ir_su">MX</span>
+                                            <span class="icon b ir_su">Boutique</span>
+
+                                        </div><!-- mx end -->
+                                    </div><!-- poster end -->
+
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_su">15세이상관람</span>
+                                            <strong>킹메이커</strong></h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div><!-- info_btn -->
+                                    </div><!-- infor -->
+                                </div><!-- swiper-slide -->
+
+                            </div>
+                        </div><!-- 세번째 슬라이드 -->
+                        <div class="swiper-container swiper-container2">
+                            <!-- Additional required wrapper -->
+                            <div class="chart_cont3 swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster02.jpg" srcset="img/poster02@2.jpg 2x" alt="뮬란">
+                                        </figure>
+                                        <div class="rank r1"><strong>1</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon all ir_pm">전체관람가</span>
+                                            <strong>뮬란</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster03.jpg" srcset="img/poster03@2.jpg 2x" alt="오! 문희">
+                                        </figure>
+                                        <div class="rank"><strong>2</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a12 ir_pm">12세이상관람</span>
+                                            <strong>오! 문희</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster01.jpg" srcset="img/poster01@2.jpg 2x" alt="테넷">
+                                        </figure>
+                                        <div class="rank"><strong>3</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_pm">15세이상관람</span>
+                                            <strong>테넷</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster08.jpg" srcset="img/poster08@2.jpg 2x" alt="비독">
+                                        </figure>
+                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_pm">15세이상관람</span>
+                                            <strong>비독</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster07.jpg" srcset="img/poster07@2.jpg 2x" alt="도망친여자">
+                                        </figure>
+                                        <div class="rank"><strong>5</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a19 ir_pm">청소년관람불가</span>
+                                            <strong>도망친여자</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster06.jpg" srcset="img/poster06@2.jpg 2x" alt="다만악에서구하소서">
+                                        </figure>
+                                        <div class="rank"><strong>6</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_pm">15세이상관람</span>
+                                            <strong>다만 악에서 구하소서</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster09.jpg" srcset="img/poster09@2.jpg 2x" alt="공포분자">
+                                        </figure>
+                                        <div class="rank"><strong>7</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_pm">15세이상관람</span>
+                                            <strong>공포분자</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="img/poster05.jpg" srcset="img/poster05@2.jpg 2x" alt="뉴뮤먼트">
+                                        </figure>
+                                        <div class="rank"><strong>8</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir_pm">MX</span>
+                                            <span class="icon b ir_pm">Boutique</span>
+                                        </div>
+                                    </div>
+                                    <!--//poster-->
+                                    <div class="infor">
+                                        <h3><span class="icon a15 ir_pm">15세이상관람</span>
+                                            <strong>뉴뮤먼트</strong></h3>
+                                        <div class="info_btn clearfix">
+                                            <a href="#">상세정보</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div>
+                                    <!--//infor-->
+                                </div>
+                                <!--//swiper_slide-->
+                            </div>
+                            <!--//chart_cont2-->
+                        </div><!-- 네번째 슬라이드 -->
+                    </div>
+                    <!--//movie_chart-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//movie-->
+
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="event clearfix">
+                    <h2>새로운 이벤트</h2>
+                    <div class="event_left clearfix">
+                        <div class="event_slide">
+                            <img src="img/event01.jpg" srcset="img/event01@2.jpg 2x" alt="시티 패키지">
+                        </div><!-- //event_slide -->
+
+                        <div class="event_box1">
+                            <img src="img/event02.jpg" srcset="img/event02@2.jpg 2x" alt="남포항점 2022시즌할인">
+                        </div><!-- //event_box1 -->
+                        <div class="event_box2">
+                            <img src="img/event03.jpg" srcset="img/event03@2.jpg 2x" alt="설선물 이수점 전용 관람권 런칭">
+                        </div><!-- //event_box2 -->
+
+
+                    </div><!-- //event_left -->
+                    <div class="event_right">
+                        <img src="img/event04.jpg" srcset="img/event04@2.jpg 2x" alt="사표대신 영화표">
+                    </div><!-- //event_right -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//event-->
+    <section id="openning">
+        <div class="container">
+            <div class="row">
+                <div class="openning">
+                    <h2><span class="ir icon grand">Grand Openning</span></h2>
+                    <strong class="icon ir date">2021.08 ~ 2021.09</strong>
+                    <p class="desc">LIFE THEATHER로 새롭게 시작하는 메가박스로 만나보세요!</p>
+                    <div class="open_box clearfix">
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>안양</strong>
+                                08월 17일
+                            </p>
+                        </div>
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>인덕원 사거리</strong>
+                                09월 01일
+                            </p>
+                        </div>
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>용인테크로벨리</strong>
+                                10월 15일
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//openning-->
+
+    <section id="new">
+        <div class="container">
+            <div class="row">
+                <div class="new">
+                    <h2>새로운 영화</h2>
+                    <div class="new_left">
+                        <div class="play" id="showTrailer"
+                        data-youtube="53T3RIohIi0"
+                        >
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1417.32 1417.32"
+                                style="enable-background:new 0 0 1417.32 1417.32;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        opacity: 0.3;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st1 {
+                                        fill: #FFFFFF;
+                                    }
+                                </style>
+                                <circle class="st0" cx="708.74" cy="708.19" r="616.97" />
+                                <path class="st1" d="M989.68,689.23L591.2,459.16c-14.6-8.43-32.85,2.11-32.85,18.97v460.13c0,16.86,18.25,27.39,32.85,18.97
+	l398.49-230.07C1004.28,718.73,1004.28,697.66,989.68,689.23z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!--//new_left-->
+                    <div class="new_right">
+                        <h3 class="title">로그 원:스타워즈 스토리</h3>
+                        <span class="release">2022년 12월 30일 개봉</span>
+                        <div class="star">
+                            <span class="icon star1"></span>
+                            <span class="icon star1"></span>
+                            <span class="icon star1"></span>
+                            <span class="icon star2"></span>
+                            <span class="icon star0"></span>
+                            <strong>7.5/10</strong>
+                        </div>
+                        <!--//star-->
+                        <ul class="summary">
+                            <li class="gener">
+                                <span>액션</span>
+                                <span>미국, 오스트레일리아</span>
+                            </li>
+                            <li class="age">
+                                <span>142분</span>
+                                <span>12세이상 관람가</span>
+                            </li>
+                            <li class="desc">
+                                단숨에 행성 하나를 파괴할
+                                위력을 지닌 데스 스타가 완성되기 전에
+                                설계도를 훔쳐내야 하는 이번 작전의 성공
+                                확률은 고작 2.4%. 생사도 모르는 아버지에
+                                얽힌 비밀을 밝히려는 진을 ...비롯해
+                                유능한 정보 요원 ‘카시안’(디에고 루나),
+                                두 눈이 멀었지만 탁월한 무술 실력을 지닌
+                                ‘치루트’(견자단), 전투 베테랑 ‘베이즈’,
+                                파일럿 ‘보디’, 시니컬한 드로이드 ‘K-2SO’
+                                까지 합류, 거대한 전쟁을 끝낼 ‘로그 원’이
+                                이끄는 가장 비밀스런 작전이 시작되는데…
+                            </li>
+                        </ul>
+                        <div class="select clearfix">
+                            <div class="s1">
+                                <label for="udate" class="ir">날짜</label>
+                                <input type="text" id="udate" name="udate" value="2022년 12월 30일" class="ui_select2">
+                            </div>
+                            <!--//s1-->
+                            <div class="s2">
+                                <label for="utime" class="ir">시간</label>
+                                <select name="utime" id="utime" class="ui_select2">
+                                    <option value="오전 0:00">오전 0:00</option>
+                                    <option value="오전 1:00">오전 1:00</option>
+                                    <option value="오전 2:00">오전 2:00</option>
+                                    <option value="오전 3:00">오전 3:00</option>
+                                    <option value="오전 4:00">오전 4:00</option>
+                                    <option value="오전 5:00">오전 5:00</option>
+                                    <option value="오전 6:00">오전 6:00</option>
+                                    <option value="오전 7:00">오전 7:00</option>
+                                    <option value="오전 8:00">오전 8:00</option>
+                                    <option value="오전 9:00">오전 9:00</option>
+                                    <option value="오전 10:00">오전 10:00</option>
+                                    <option value="오전 11:00">오전 11:00</option>
+                                    <option value="오전 12:00">오전 12:00</option>
+                                    <option value="오후 0:00">오후 0:00</option>
+                                    <option value="오후 1:00">오후 1:00</option>
+                                    <option value="오후 2:00">오후 2:00</option>
+                                    <option value="오후 3:00">오후 3:00</option>
+                                    <option value="오후 4:00">오후 4:00</option>
+                                    <option value="오후 5:00">오후 5:00</option>
+                                    <option value="오후 6:00">오후 6:00</option>
+                                    <option value="오후 7:00">오후 7:00</option>
+                                    <option value="오후 8:00">오후 8:00</option>
+                                    <option value="오후 9:00">오후 9:00</option>
+                                    <option value="오후 11:00">오후 11:00</option>
+                                    <option value="오후 12:00">오후 12:00</option>
+                                </select>
+                            </div>
+                            <!--//s2-->
+                            <div class="s3">
+                                <label for="utext" class="ir">주소 또는 도로명을 입력해 주세요.</label>
+                                <input type="text" id="utext" name="utext" class="ui_input3"
+                                    placeholder="주소 또는 도로명을 입력해 주세요.">
+                            </div>
+                            <!--//s3-->
+                        </div>
+                        <!--//select-->
+                        <div class="btn clearfix">
+                            <a href="#" class="white">좌석할인</a>
+                            <a href="#" class="purple">예매하기</a>
+                        </div>
+
+                    </div>
+                    <!--//new_right-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//new-->
+    <section id="help">
+        <div class="container">
+            <div class="row">
+                <div class="help clearfix">
+                    <article class="help_box1">
+                        <h3>공지사항</h3>
+                        <div class="notice">
+                            <ul class="clearfix">
+                                <li class="active">
+                                    <a href="#">전체공지</a>
+                                    <ul>
+                                        <li>
+                                            <dt>
+                                                <strong>전체</strong>
+                                                <em>2022.12.23</em>
+                                            </dt>
+                                            <dd>
+                                                [무대인사](마녀)1주차~(마녀)1주차~(마녀)1주차~(마녀)1주차~(마녀)1주차~
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체</strong>
+                                                <em>2022.12.20</em>
+                                            </dt>
+                                            <dd>
+                                                [라이브퓨밍]그대가 조국 100만돌파기념 그대가 조국 100만돌파기념
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체</strong>
+                                                <em>2022.12.20</em>
+                                            </dt>
+                                            <dd>
+                                                [라이브퓨밍]그대가 조국 100만돌파기념 그대가 조국 100만돌파기념
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체</strong>
+                                                <em>2022.12.30</em>
+                                            </dt>
+                                            <dd>
+                                                [공지]2022년 VIP미션 이벤트 VIP미션 이벤트 VIP미션 이벤트VIP 미션 이벤트
+                                            </dd>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">영화관광지</a>
+                                    <ul>
+                                        <li>
+                                            <dt>
+                                                <strong>전체2</strong>
+                                                <em>2022.12.23</em>
+                                            </dt>
+                                            <dd>
+                                                [무대인사](마녀)1주차~(마녀)1주차~(마녀)1주차~(마녀)1주차~(마녀)1주차~
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체2</strong>
+                                                <em>2022.12.20</em>
+                                            </dt>
+                                            <dd>
+                                                [라이브퓨밍]그대가 조국 100만돌파기념 그대가 조국 100만돌파기념
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체2</strong>
+                                                <em>2022.12.20</em>
+                                            </dt>
+                                            <dd>
+                                                [라이브퓨밍]그대가 조국 100만돌파기념 그대가 조국 100만돌파기념
+                                            </dd>
+                                        </li>
+                                        <li>
+                                            <dt>
+                                                <strong>전체2</strong>
+                                                <em>2022.12.30</em>
+                                            </dt>
+                                            <dd>
+                                                [공지]2022년 VIP미션 이벤트 VIP미션 이벤트 VIP미션 이벤트VIP 미션 이벤트
+                                            </dd>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!--//help_box1-->
+                    <article class="help_box2">
+                        <h3>메가박스 할인카드</h3>
+                        <div class="card">
+                            <ul>
+                                <li><a href="#">
+                                        <span>
+                                            <img src="img/card01.jpg" srcset="img/card01@2.jpg" alt="card1">
+                                        </span>
+                                        <strong>T멤버쉽 일반</strong>
+                                        <em>영화 2,000원 현장 즉시 할인(1일 5매)</em>
+                                    </a></li>
+                                <li><a href="#">
+                                        <span>
+                                            <img src="img/card02.jpg" srcset="img/card02@2.jpg" alt="card2">
+                                        </span>
+                                        <strong>LG U+</strong>
+                                        <em>영화 2,000원 현장 즉시 할인(1일 5매)</em>
+                                    </a></li>
+                                <li><a href="#">
+                                        <span>
+                                            <img src="img/card03.jpg" srcset="img/card03@2.jpg" alt="card3">
+                                        </span>
+                                        <strong>SK멤버쉽 일반</strong>
+                                        <em>영화 2,000원 현장 즉시 할인(1일 5매)</em>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!--//help_box2-->
+                    <article class="help_box3">
+                        <h3>고객센터</h3>
+                        <div class="service">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                                        <span class="img_svg">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 141.73 141.73"
+                                                style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st1 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st2 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st3 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st4 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st5 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st6 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st7 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st8 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 2;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st9 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st10 {
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st11 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st12 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 2.7781;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st13 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st14 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st15 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: bevel;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st16 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st17 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st18 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st19 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715FA6;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <polygon class="st13"
+                                                        points="122.64,121.16 20.9,121.16 20.9,55.76 71.17,30.22 122.64,55.76 	" />
+                                                    <polyline class="st14"
+                                                        points="38.8,72.28 38.8,19.97 105.34,19.97 105.34,72.11 	" />
+                                                    <path class="st15"
+                                                        d="M21.21,121.16l37.61-28.64c7.83-5.96,18.68-5.96,26.51,0l37.61,28.64H21.21z" />
+                                                    <line class="st16" x1="38.8" y1="72.96" x2="58.82" y2="92.52" />
+                                                    <line class="st16" x1="21.21" y1="55.76" x2="38.8" y2="72.96" />
+                                                    <line class="st13" x1="122.64" y1="55.76" x2="85.02" y2="92.52" />
+                                                    <line class="st17" x1="49.45" y1="30.22" x2="71.17" y2="30.22" />
+                                                    <line class="st17" x1="70.71" y1="42.31" x2="97.14" y2="42.31" />
+                                                    <line class="st17" x1="45.53" y1="57.98" x2="84.5" y2="57.98" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <strong>1:1문의</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img_svg">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 141.73 141.73"
+                                                style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st1 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st2 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st3 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st4 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st5 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st6 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st7 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st8 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 2;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st9 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st10 {
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st11 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st12 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 2.7781;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st13 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st14 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st15 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: bevel;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st16 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st17 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st18 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st19 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715FA6;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st1" d="M109.19,117.09L88.75,95.25H53.96l-21.38,21.13c-0.57,0.48-1.16,0.89-1.77,1.25
+		c-7.33,4.27-17.34,0.01-18.38-8.81c-0.03-0.23-0.05-0.86-0.06-1.57c-0.04-1.59,0.17-3.19,0.6-4.72l11.26-39.4
+		c2.57-7.16,8.8-14.27,16.65-14.27h60.07c7.85,0,14.57,5.65,16.65,14.27l9.96,36.84c0,0.49,1.87,6.43,1.87,8.63
+		C129.41,118.2,116.99,122.69,109.19,117.09z" />
+                                                    <line class="st2" x1="70.92" y1="46.48" x2="70.92" y2="22.09" />
+                                                    <circle class="st3" cx="53.16" cy="93.27" r="8.33" />
+                                                    <circle class="st3" cx="88.06" cy="93.27" r="8.33" />
+                                                    <line class="st4" x1="46.72" y1="61.99" x2="46.72" y2="79.44" />
+                                                    <line class="st4" x1="55.44" y1="70.72" x2="38" y2="70.72" />
+                                                    <circle class="st4" cx="84.09" cy="64.81" r="5.95" />
+                                                    <circle class="st4" cx="102.26" cy="73.49" r="5.95" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <strong>단체관람</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img_svg">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 141.73 141.73"
+                                                style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
+                                                <g>
+                                                    <path
+                                                        style="fill:#FFFFFF;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                                                        d="
+		M116.19,104.27h-71.5c5.28,0,9.57,5.05,9.57,11.28c0,6.23-4.28,11.28-9.57,11.28h71.5c5.28,0,9.57-5.05,9.57-11.28
+		C125.75,109.31,121.47,104.27,116.19,104.27z" />
+                                                    <path
+                                                        style="fill:none;stroke:#000000;stroke-width:3.5;stroke-linejoin:round;stroke-miterlimit:10;"
+                                                        d="M54.25,115.54
+		c0,6.23-4.28,11.28-9.57,11.28s-9.57-5.05-9.57-11.28V27.18" />
+                                                    <path
+                                                        style="fill:#FFFFFF;stroke:#000000;stroke-width:3.5;stroke-miterlimit:10;"
+                                                        d="M116.19,26.19c0-6.23-4.28-11.28-9.57-11.28" />
+                                                    <path
+                                                        style="fill:#FFFFFF;stroke:#000000;stroke-width:3.5;stroke-miterlimit:10;"
+                                                        d="M15.98,26.19c0-6.23,4.28-11.28,9.57-11.28
+		s9.57,5.05,9.57,11.28H15.98z" />
+
+                                                    <line
+                                                        style="fill:#FFFFFF;stroke:#000000;stroke-width:3.5;stroke-miterlimit:10;"
+                                                        x1="116.19" y1="104.27" x2="116.19" y2="26.19" />
+                                                    <line
+                                                        style="fill:#FFFFFF;stroke:#000000;stroke-width:3.5;stroke-miterlimit:10;"
+                                                        x1="25.55" y1="14.92" x2="106.62" y2="14.92" />
+                                                    <text transform="matrix(1 0 0 1 47.8119 51.6632)"
+                                                        style="fill:#715EA6; font-family:'ArialRoundedMTBold'; font-size:28.4861px;">FAQ</text>
+
+                                                    <line
+                                                        style="stroke:#715EA6;stroke-width:3.5;stroke-linecap:round;stroke-miterlimit:10;"
+                                                        x1="52.25" y1="67.88" x2="78.4" y2="67.88" />
+
+                                                    <line
+                                                        style="stroke:#715EA6;stroke-width:3.5;stroke-linecap:round;stroke-miterlimit:10;"
+                                                        x1="71.26" y1="82.37" x2="102.91" y2="82.37" />
+                                                </g>
+                                            </svg>
+
+                                        </span>
+                                        <strong>자주묻는 질문</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img_svg">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 141.73 141.73"
+                                                style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
+                                                <style type="text/css">
+                                                    .st0 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st1 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st2 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st3 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st4 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st5 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st6 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st7 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st8 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 2;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st9 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st10 {
+                                                        stroke: #000000;
+                                                        stroke-width: 4.1671;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st11 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 4.1671;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st12 {
+                                                        stroke: #715EA6;
+                                                        stroke-width: 2.7781;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st13 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st14 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st15 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-linejoin: bevel;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st16 {
+                                                        fill: none;
+                                                        stroke: #715EA6;
+                                                        stroke-width: 3.5;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st17 {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-width: 3.5;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st18 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #010202;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st19 {
+                                                        fill: #FFFFFF;
+                                                        stroke: #715FA6;
+                                                        stroke-width: 4;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                                <g>
+                                                    <path class="st9" d="M85.66,86.01v27.43c0,3.86-3.16,7.02-7.02,7.02H32.98c-3.86,0-7.02-3.16-7.02-7.02V28.29
+		c0-3.86,3.16-7.02,7.02-7.02h45.65c3.86,0,7.02,3.16,7.02,7.02v23.26" />
+                                                    <line class="st10" x1="25.96" y1="99.84" x2="85.66" y2="99.84" />
+                                                    <line class="st10" x1="25.96" y1="38.16" x2="85.66" y2="38.16" />
+                                                    <circle cx="55.81" cy="109.93" r="2.63" />
+                                                    <path class="st11" d="M110.51,54.41H82l-7.9,5.49l0.15-5.49H70.9c-2.9,0-5.27-2.37-5.27-5.27V26.53c0-2.9,2.37-5.27,5.27-5.27
+		h39.61c2.9,0,5.27,2.37,5.27,5.27v22.61C115.77,52.04,113.4,54.41,110.51,54.41z" />
+                                                    <circle class="st12" cx="76.94" cy="38.16" r="1.57" />
+                                                    <circle class="st12" cx="90.7" cy="38.16" r="1.57" />
+                                                    <circle class="st12" cx="103.94" cy="38.16" r="1.57" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <strong>분실문 문의</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!--//help_box3-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//help-->
+    <footer id="footer">
+        <div id="footer_sns">
+            <div class="container">
+                <div class="footer_sns">
+                    <ul>
+                        <li class="icon s1">
+                            <a href="#">
+                                <span class="ir">트위터</span>
+                            </a>
+                        </li>
+                        <li class="icon s2">
+                            <a href="#">
+                                <span class="ir">페이스북</span>
+                            </a>
+                        </li>
+                        <li class="icon s3">
+                            <a href="#">
+                                <span class="ir">인스타그램</span>
+                            </a>
+                        </li>
+                        <li class="icon s4">
+                            <a href="#">
+                                <span class="ir">구글플레이</span>
+                            </a>
+                        </li>
+                        <li class="icon s5">
+                            <a href="#">
+                                <span class="ir">아이폰앱스토어</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tel">
+                        <a href="#">ARS<em>1544-0070</em></a>
+                    </div>
+                </div><!--//footer_sns-->
+                <div id="footer_infor">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer_infor">
+                                <h2><img src="img/logo_footer.png" alt="megabox"></h2>
+                                <ul>
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">채용정보</a></li>
+                                    <li><a href="#">제휴/광고/부대사업 문의</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">고객센터</a></li>
+                                    <li><a href="#">윤리경영</a></li>
+                                </ul>
+                                <address>
+                                    <p>서울특별시 강남구 도산대로 156, 2창 메가박스중앙(주)(논현동, 중앙엠엔비사옥)<br>
+                                        <span>대표자명 김진선</span>개인정보보호 책임자 경영지원시 실장 박영진 <br>
+                                        <span>사업자등록번호 211-86-59478</span>통신판매신고번호 제 833호
+                                    </p>
+                                    <p>Copyright 2014 by MegaboxJoongAng Inc.All right Reserved</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--//footer_info-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- 트레일러 -->
+    <aside id="blackout" class="overlay">
+        <div id="trailerModal" class="modal">
+            <div id="trailer">
+                <!--youtube플레이어를 대체하는 공간-->
+            </div>
+        </div>
+        <button id="hideTrailer" class="modal_close">닫기</button>
+    </aside>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/movie.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
